@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI教程精华站 - 汇聚全球顶级AI教程精华</title>
+  <meta name="description" content="汇聚全球顶级AI教程精华，去品牌化呈现纯知识内容。从提示词工程到智能体系统，从AI素养到API开发，一站式学习AI的核心技能。">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">AI</div>
+        <span>教程精华站</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#categories">分类浏览</a></li>
+        <li><a href="#paths">学习路径</a></li>
+        <li><a href="#courses">课程列表</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" placeholder="搜索教程... (⌘K)" readonly>
+      </div>
+      <button class="nav-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- 搜索覆盖层 -->
+  <div class="search-overlay">
+    <div class="search-panel">
+      <input type="text" class="search-panel-input" placeholder="搜索教程标题、描述、标签...">
+      <div class="search-results">
+        <div class="search-result-item">
+          <div class="search-result-desc">输入关键词搜索教程...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主内容 -->
+  <main class="main">
+    <!-- Hero区域 -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">✨ 源自全球顶级AI教程</div>
+        <h1>掌握AI核心技能<br><span class="highlight">从这里开始</span></h1>
+        <p class="hero-desc">
+          汇聚全球顶级AI教程精华，去品牌化呈现纯知识内容。<br>
+          从提示词工程到智能体系统，一站式学习AI的核心技能。
+        </p>
+        <div class="hero-actions">
+          <a href="#paths" class="btn btn-primary">开始学习 →</a>
+          <a href="#categories" class="btn btn-secondary">浏览分类</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">7</div>
+            <div class="hero-stat-label">精华教程</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">6</div>
+            <div class="hero-stat-label">内容分类</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">5</div>
+            <div class="hero-stat-label">学习路径</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">25+</div>
+            <div class="hero-stat-label">课程资源</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 分类卡片 -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">内容分类</h2>
+          <p class="section-desc">按主题浏览，找到最适合你的学习内容</p>
+        </div>
+        <div class="categories-grid">
+          <a href="article.html?c=basics/01-ai-basics-introduction" class="category-card">
+            <div class="category-icon">🚀</div>
+            <div class="category-title">AI基础</div>
+            <div class="category-desc">从零开始认识人工智能，建立AI基础认知和核心概念</div>
+            <div class="category-count">1 篇教程</div>
+          </a>
+          <a href="article.html?c=prompt-engineering/01-prompt-engineering-guide" class="category-card">
+            <div class="category-icon">✨</div>
+            <div class="category-title">提示词工程</div>
+            <div class="category-desc">系统掌握与AI高效沟通的核心技巧和最佳实践</div>
+            <div class="category-count">2 篇教程</div>
+          </a>
+          <a href="article.html?c=agent-systems/01-agent-systems-guide" class="category-card">
+            <div class="category-icon">🤖</div>
+            <div class="category-title">智能体系统</div>
+            <div class="category-desc">深入理解AI智能体的设计模式与实现方法</div>
+            <div class="category-count">1 篇教程</div>
+          </a>
+          <a href="article.html?c=api-development/01-api-development-guide" class="category-card">
+            <div class="category-icon">🔧</div>
+            <div class="category-title">API开发</div>
+            <div class="category-desc">从API基础到工具调用的完整开发实战指南</div>
+            <div class="category-count">1 篇教程</div>
+          </a>
+          <a href="article.html?c=ai-literacy/01-ai-fluency-fundamentals" class="category-card">
+            <div class="category-icon">💡</div>
+            <div class="category-title">AI素养</div>
+            <div class="category-desc">建立与AI系统高效协作的核心素养和伦理意识</div>
+            <div class="category-count">1 篇教程</div>
+          </a>
+          <a href="article.html?c=mcp/01-mcp-guide" class="category-card">
+            <div class="category-icon">🔌</div>
+            <div class="category-title">MCP协议</div>
+            <div class="category-desc">模型上下文协议入门与进阶，连接AI与外部服务</div>
+            <div class="category-count">1 篇教程</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 学习路径 -->
+    <section class="section" id="paths">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">学习路径</h2>
+          <p class="section-desc">根据你的目标选择最适合的学习路线，5条路径覆盖从零基础到架构师</p>
+        </div>
+        <div class="paths-grid">
+          <div class="path-card">
+            <div class="path-icon">🌱</div>
+            <h3 class="path-title">P1 零基础AI入门</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">AI小白 · 2-3周 · 能独立使用AI完成日常工作</p>
+            <ul class="path-steps">
+              <li class="path-step">
+                <span class="path-step-num">1</span>
+                <a href="article.html?c=basics/01-ai-basics-introduction">AI入门：从零开始认识人工智能</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">2</span>
+                <a href="article.html?c=ai-literacy/01-ai-fluency-fundamentals">AI素养：框架与基础</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">3</span>
+                <a href="article.html?c=prompt-engineering/01-prompt-engineering-guide">提示词工程完全指南</a>
+              </li>
+            </ul>
+          </div>
+          <div class="path-card">
+            <div class="path-icon">🎯</div>
+            <h3 class="path-title">P2 提示词工程精通</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">内容创作者/产品经理 · 3-4周 · 掌握系统化提示词设计</p>
+            <ul class="path-steps">
+              <li class="path-step">
+                <span class="path-step-num">1</span>
+                <a href="article.html?c=prompt-engineering/01-prompt-engineering-guide">提示词工程完全指南</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">2</span>
+                <a href="article.html?c=prompt-engineering/02-prompt-engineering-interactive">提示词工程交互式教程精要</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">3</span>
+                <a href="article.html?c=agent-systems/01-agent-systems-guide">智能体思维与推理控制</a>
+              </li>
+            </ul>
+          </div>
+          <div class="path-card">
+            <div class="path-icon">💻</div>
+            <h3 class="path-title">P3 AI应用开发者</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">程序员 · 4-6周 · 能独立构建和部署AI应用</p>
+            <ul class="path-steps">
+              <li class="path-step">
+                <span class="path-step-num">1</span>
+                <a href="article.html?c=api-development/01-api-development-guide">API开发实战指南</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">2</span>
+                <a href="article.html?c=mcp/01-mcp-guide">模型上下文协议（MCP）实战</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">3</span>
+                <a href="article.html?c=agent-systems/01-agent-systems-guide">AI智能体系统实战</a>
+              </li>
+            </ul>
+          </div>
+          <div class="path-card">
+            <div class="path-icon">🧠</div>
+            <h3 class="path-title">P4 智能体系统架构师</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">高级开发者 · 3-4周 · 能设计多智能体协作系统（需前置P3）</p>
+            <ul class="path-steps">
+              <li class="path-step">
+                <span class="path-step-num">1</span>
+                <a href="article.html?c=agent-systems/01-agent-systems-guide">AI智能体系统实战</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">2</span>
+                <a href="article.html?c=mcp/01-mcp-guide">MCP协议高级实现</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">3</span>
+                多智能体协作设计实战
+              </li>
+            </ul>
+          </div>
+          <div class="path-card">
+            <div class="path-icon">📖</div>
+            <h3 class="path-title">P5 AI素养推广者</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">教师/培训师 · 2-3周 · 能在组织内推广AI素养教育</p>
+            <ul class="path-steps">
+              <li class="path-step">
+                <span class="path-step-num">1</span>
+                <a href="article.html?c=ai-literacy/01-ai-fluency-fundamentals">AI素养：框架与基础</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">2</span>
+                <a href="article.html?c=basics/01-ai-basics-introduction">AI能力与局限</a>
+              </li>
+              <li class="path-step">
+                <span class="path-step-num">3</span>
+                行业AI素养实践
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 课程列表 -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">课程资源</h2>
+          <p class="section-desc">源自官方学院20门课程和5门开源实践课程的精华内容</p>
+        </div>
+
+        <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: var(--accent);">核心课程</h3>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>课程名称</th>
+              <th>分类</th>
+              <th>难度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>AI助手入门</td><td>AI素养</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>AI编程助手入门</td><td>API开发</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>AI平台入门</td><td>API开发</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>AI协作入门</td><td>AI素养</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>AI编程助手实战</td><td>API开发</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+            <tr><td>AI素养：框架与基础</td><td>AI素养</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>AI API开发实战</td><td>API开发</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+            <tr><td>MCP入门</td><td>智能体</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+            <tr><td>教育者AI素养</td><td>AI素养</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>学生AI素养</td><td>AI素养</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>MCP进阶</td><td>智能体</td><td><span class="difficulty-badge difficulty-advanced">高级</span></td></tr>
+            <tr><td>AI+云服务(AWS)</td><td>API开发</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+            <tr><td>AI+云服务(GCP)</td><td>API开发</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+            <tr><td>教授AI素养</td><td>AI素养</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+            <tr><td>非营利组织AI素养</td><td>AI素养</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>智能体技能入门</td><td>智能体</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+            <tr><td>子智能体入门</td><td>智能体</td><td><span class="difficulty-badge difficulty-advanced">高级</span></td></tr>
+            <tr><td>AI能力与局限</td><td>AI素养</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>小企业AI素养</td><td>AI素养</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>开发者AI素养</td><td>AI素养</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="font-size: 1.2rem; margin: 32px 0 16px; color: var(--accent);">开源实践课程</h3>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>课程名称</th>
+              <th>分类</th>
+              <th>难度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>API基础</td><td>API开发</td><td><span class="difficulty-badge difficulty-beginner">入门</span></td></tr>
+            <tr><td>提示词工程交互式教程</td><td>提示词工程</td><td><span class="difficulty-badge difficulty-intermediate">入门-进阶</span></td></tr>
+            <tr><td>真实世界提示</td><td>提示词工程</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+            <tr><td>提示词评估</td><td>提示词工程</td><td><span class="difficulty-badge difficulty-advanced">高级</span></td></tr>
+            <tr><td>工具使用</td><td>智能体</td><td><span class="difficulty-badge difficulty-intermediate">进阶</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">关于本站</h2>
+        </div>
+        <div style="max-width: 700px; margin: 0 auto; text-align: center; color: var(--text-secondary); line-height: 1.8;">
+          <p>本站内容源自全球顶级AI教程资源，经过转录、翻译、去品牌化处理，提炼为纯知识精华。</p>
+          <p style="margin-top: 16px;">所有内容均以学习和教育为目的，不包含任何品牌推销或产品营销内容。</p>
+          <div style="margin-top: 24px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+            <div style="text-align: center;">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">20</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">官方学院课程</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">5</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">开源实践课程</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">170+</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">YouTube精选视频</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-text">AI教程精华站 — 汇聚全球顶级AI教程精华</div>
+        <div class="footer-links">
+          <a href="#categories">分类浏览</a>
+          <a href="#paths">学习路径</a>
+          <a href="#courses">课程列表</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 返回顶部 -->
+  <button class="back-to-top">↑</button>
+
+  <script src="app.js"></script>
+</body>
+</html>

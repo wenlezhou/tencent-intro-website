@@ -1,0 +1,30 @@
+{
+  "last_updated": "2026-06-26T18:53:00+08:00",
+  "agents": {
+    "coordinator": {"expert_id": "2070454566238715904", "session_id": "2070459270677610496", "status": "active"},
+    "scraper": {"expert_id": "2070454746629836800", "session_id": "2070459377112379392", "status": "active"},
+    "translator": {"expert_id": "2070455951521447936", "session_id": "2070459404714995712", "status": "active"},
+    "frontend": {"expert_id": "2070455692681326592", "session_id": "2070459458335059968", "status": "active"},
+    "tester": {"expert_id": "2070455195131785216", "session_id": "2070459494036922368", "status": "active"},
+    "heartbeat": {"expert_id": "2070455444973711360", "session_id": "2070459529998929920", "status": "active"}
+  },
+  "content_pipeline": {
+    "academy_courses": {"total": 20, "fetched": 20, "translated": 0, "items": []},
+    "github_courses": {"total": 5, "fetched": 5, "translated": 0, "items": []},
+    "youtube_videos": {"total": 170, "fetched": 0, "translated": 0, "items": []},
+    "docs_best_practices": {"total": 1, "fetched": 1, "translated": 0, "items": []}
+  },
+  "cron_tasks": {
+    "heartbeat": {"id": 1566441, "interval": "5min", "status": 1},
+    "scraper": {"id": 1566450, "interval": "10min", "status": 1},
+    "translator_a": {"id": 1566456, "interval": "10min", "status": 1},
+    "translator_b": {"id": 1566462, "interval": "10min", "status": 1},
+    "frontend": {"id": 1566473, "interval": "10min", "status": 1},
+    "tester": {"id": 1566479, "interval": "10min", "status": 1}
+  },
+  "repo": {
+    "url": "https://github.com/wenlezhou/tencent-intro-website",
+    "last_push": null,
+    "last_pull": null
+  }
+}

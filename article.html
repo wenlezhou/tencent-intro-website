@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章 - AI教程精华站</title>
+  <meta name="description" content="AI教程精华站 - 精华教程文章">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    .article-loading {
+      text-align: center;
+      padding: 120px 24px;
+      color: var(--text-muted);
+    }
+    .article-loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+      font-size: 0.85rem;
+    }
+    .breadcrumb a {
+      color: var(--text-muted);
+    }
+    .breadcrumb a:hover {
+      color: var(--accent);
+    }
+    .breadcrumb-sep {
+      color: var(--text-muted);
+    }
+    .breadcrumb-current {
+      color: var(--text-secondary);
+    }
+    .nav-back {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .nav-back:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">AI</div>
+        <span>教程精华站</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#categories">分类浏览</a></li>
+        <li><a href="index.html#paths">学习路径</a></li>
+        <li><a href="index.html#courses">课程列表</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" placeholder="搜索教程... (⌘K)" readonly>
+      </div>
+      <button class="nav-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- 搜索覆盖层 -->
+  <div class="search-overlay">
+    <div class="search-panel">
+      <input type="text" class="search-panel-input" placeholder="搜索教程标题、描述、标签...">
+      <div class="search-results">
+        <div class="search-result-item">
+          <div class="search-result-desc">输入关键词搜索教程...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主内容 -->
+  <main class="main">
+    <div class="container">
+      <div class="article-layout">
+        <!-- 左侧TOC -->
+        <aside class="toc">
+          <div class="toc-title">目录</div>
+          <ul class="toc-list" id="tocList"></ul>
+        </aside>
+
+        <!-- 文章正文 -->
+        <div class="article-content">
+          <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current" id="breadcrumbCategory">加载中...</span>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current" id="breadcrumbTitle">加载中...</span>
+          </div>
+
+          <div class="article-header">
+            <div class="article-meta">
+              <span class="article-meta-item" id="metaCategory">📋 加载中</span>
+              <span class="article-meta-item" id="metaDifficulty">📊 加载中</span>
+              <span class="article-meta-item" id="metaTime">⏱️ 加载中</span>
+            </div>
+            <h1 class="article-title" id="articleTitle">加载中...</h1>
+            <p class="article-desc" id="articleDesc">加载中...</p>
+            <div class="article-tags" id="articleTags"></div>
+          </div>
+
+          <div class="article-body" id="articleBody">
+            <div class="article-loading">
+              <div class="article-loading-spinner"></div>
+              <div>正在加载文章内容...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧信息 -->
+        <aside class="article-sidebar">
+          <div class="sidebar-card">
+            <div class="sidebar-card-title">文章信息</div>
+            <div class="sidebar-item">
+              <span class="sidebar-item-label">分类</span>
+              <span class="sidebar-item-value" id="sideCategory">-</span>
+            </div>
+            <div class="sidebar-item">
+              <span class="sidebar-item-label">难度</span>
+              <span class="sidebar-item-value" id="sideDifficulty">-</span>
+            </div>
+            <div class="sidebar-item">
+              <span class="sidebar-item-label">阅读时间</span>
+              <span class="sidebar-item-value" id="sideTime">-</span>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <div class="sidebar-card-title">相关教程</div>
+            <div id="relatedArticles"></div>
+          </div>
+          <div class="sidebar-card">
+            <div class="sidebar-card-title">返回</div>
+            <a href="index.html" class="nav-back">← 返回首页</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-text">AI教程精华站 — 汇聚全球顶级AI教程精华</div>
+        <div class="footer-links">
+          <a href="index.html">首页</a>
+          <a href="index.html#categories">分类浏览</a>
+          <a href="index.html#paths">学习路径</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 返回顶部 -->
+  <button class="back-to-top">↑</button>
+
+  <script src="app.js"></script>
+  <script>
+    // 文章数据映射
+    const articleMap = {
+      'basics/01-ai-basics-introduction': {
+        title: 'AI入门：从零开始认识人工智能',
+        category: 'AI基础',
+        categorySlug: 'basics',
+        description: '零基础友好的AI入门指南，用通俗的语言解释AI的工作原理、能力边界和实际应用',
+        difficulty: '入门',
+        readingTime: '20分钟',
+        tags: ['AI入门', '人工智能', '大语言模型', '零基础'],
+        file: 'content/basics/01-ai-basics-introduction.md'
+      },
+      'prompt-engineering/01-prompt-engineering-guide': {
+        title: '提示词工程完全指南',
+        category: '提示词工程',
+        categorySlug: 'prompt-engineering',
+        description: '从零掌握提示词工程的核心技巧，涵盖基础结构、角色设定、示例使用、XML标签、长上下文等关键方法',
+        difficulty: '入门-进阶',
+        readingTime: '45分钟',
+        tags: ['提示词工程', 'Prompt Engineering', 'AI交互', '最佳实践'],
+        file: 'content/prompt-engineering/01-prompt-engineering-guide.md'
+      },
+      'prompt-engineering/02-prompt-engineering-interactive': {
+        title: '提示词工程交互式教程精要',
+        category: '提示词工程',
+        categorySlug: 'prompt-engineering',
+        description: '9章交互式教程的核心知识点提炼，从基础结构到复杂场景，每章配有实战练习',
+        difficulty: '入门-进阶',
+        readingTime: '50分钟',
+        tags: ['提示词工程', '交互式教程', '实战练习', '逐步进阶'],
+        file: 'content/prompt-engineering/02-prompt-engineering-interactive.md'
+      },
+      'agent-systems/01-agent-systems-guide': {
+        title: 'AI智能体系统实战',
+        category: '智能体系统',
+        categorySlug: 'agent-systems',
+        description: '深入理解AI智能体的设计模式，掌握长周期推理、子智能体编排、状态跟踪和安全控制',
+        difficulty: '进阶',
+        readingTime: '35分钟',
+        tags: ['智能体', 'Agent', '自动化', '工具调用', 'MCP'],
+        file: 'content/agent-systems/01-agent-systems-guide.md'
+      },
+      'api-development/01-api-development-guide': {
+        title: 'API开发实战指南',
+        category: 'API开发',
+        categorySlug: 'api-development',
+        description: '从零开始掌握AI API开发，涵盖API基础、消息格式、流式响应、多模态提示和工具调用',
+        difficulty: '入门-进阶',
+        readingTime: '40分钟',
+        tags: ['API', '开发', 'Python', 'SDK', '多模态'],
+        file: 'content/api-development/01-api-development-guide.md'
+      },
+      'ai-literacy/01-ai-fluency-fundamentals': {
+        title: 'AI素养：框架与基础',
+        category: 'AI素养',
+        categorySlug: 'ai-literacy',
+        description: '建立与AI系统高效协作的核心素养，理解AI的能力与局限，学会负责任地使用AI',
+        difficulty: '入门',
+        readingTime: '25分钟',
+        tags: ['AI素养', 'AI Fluency', 'AI基础', '人机协作'],
+        file: 'content/ai-literacy/01-ai-fluency-fundamentals.md'
+      },
+      'mcp/01-mcp-guide': {
+        title: '模型上下文协议（MCP）实战',
+        category: 'MCP协议',
+        categorySlug: 'mcp',
+        description: '从零构建MCP服务器和客户端，掌握工具、资源、提示三大核心原语，连接AI与外部服务',
+        difficulty: '进阶-高级',
+        readingTime: '35分钟',
+        tags: ['MCP', '模型上下文协议', '工具调用', 'Python', '服务器'],
+        file: 'content/mcp/01-mcp-guide.md'
+      }
+    };
+
+    // 获取URL参数
+    function getArticleKey() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('c') || 'basics/01-ai-basics-introduction';
+    }
+
+    // 加载文章
+    async function loadArticle() {
+      const key = getArticleKey();
+      const article = articleMap[key];
+
+      if (!article) {
+        document.getElementById('articleBody').innerHTML = '<p>文章未找到</p>';
+        return;
+      }
+
+      // 更新页面元信息
+      document.title = `${article.title} - AI教程精华站`;
+      document.getElementById('articleTitle').textContent = article.title;
+      document.getElementById('articleDesc').textContent = article.description;
+      document.getElementById('breadcrumbCategory').textContent = article.category;
+      document.getElementById('breadcrumbTitle').textContent = article.title;
+      document.getElementById('metaCategory').textContent = `📋 ${article.category}`;
+      document.getElementById('metaDifficulty').textContent = `📊 ${article.difficulty}`;
+      document.getElementById('metaTime').textContent = `⏱️ ${article.readingTime}`;
+      document.getElementById('sideCategory').textContent = article.category;
+      document.getElementById('sideDifficulty').textContent = article.difficulty;
+      document.getElementById('sideTime').textContent = article.readingTime;
+
+      // 标签
+      document.getElementById('articleTags').innerHTML = article.tags.map(t =>
+        `<span class="article-tag">${t}</span>`
+      ).join('');
+
+      // 加载Markdown内容
+      try {
+        const resp = await fetch(article.file);
+        if (!resp.ok) throw new Error('文件加载失败');
+        const md = await resp.text();
+        const html = parseMarkdown(md);
+        document.getElementById('articleBody').innerHTML = html;
+
+        // 生成TOC
+        const toc = extractTOC(html);
+        const tocList = document.getElementById('tocList');
+        tocList.innerHTML = toc.map(h =>
+          `<li class="toc-item"><a href="#${h.id}" class="${h.level === 3 ? 'toc-h3' : ''}">${h.text}</a></li>`
+        ).join('');
+
+        // 初始化TOC高亮
+        initTOCHighlight();
+      } catch (err) {
+        document.getElementById('articleBody').innerHTML = `
+          <div style="text-align: center; padding: 40px; color: var(--text-muted);">
+            <p>文章内容加载失败</p>
+            <p style="margin-top: 8px; font-size: 0.85rem;">${err.message}</p>
+            <a href="index.html" style="margin-top: 16px; display: inline-block;" class="btn btn-secondary">返回首页</a>
+          </div>
+        `;
+      }
+
+      // 相关教程
+      const related = articles.filter(a => a.category === article.categorySlug && a.id !== key)
+        .concat(articles.filter(a => a.category !== article.categorySlug))
+        .slice(0, 4);
+
+      document.getElementById('relatedArticles').innerHTML = related.map(a =>
+        `<div style="padding: 8px 0; border-bottom: 1px solid var(--border);">
+          <a href="article.html?c=${a.category}/${a.slug}" style="font-size: 0.85rem; color: var(--text-secondary);">${a.title}</a>
+        </div>`
+      ).join('');
+    }
+
+    // 初始化
+    document.addEventListener('DOMContentLoaded', () => {
+      loadArticle();
+      initSearch();
+      initBackToTop();
+    });
+  </script>
+</body>
+</html>
