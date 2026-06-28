@@ -1,0 +1,41 @@
+{
+  "channel": "AnthropicAI",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "scraped_at": "2026-06-26",
+  "total_videos": 141,
+  "total_duration_hours": 29.6,
+  "avg_duration_minutes": 12.6,
+  "channel_stats": {
+    "subscribers": 697000,
+    "total_views": 28700000
+  },
+  "category_distribution": {
+    "general": 103,
+    "tutorial": 25,
+    "product_launch": 10,
+    "research": 3,
+    "event": 2
+  },
+  "videos": [
+    {"id": "Y9Wz2PV404E", "title": "Introducing Claude Fable 5", "duration": "1:54", "category": "product_launch"},
+    {"id": "j2knrqAzYVY", "title": "Translating Claude's thoughts into language", "duration": "3:17", "category": "general"},
+    {"id": "INGOC6-LLv0", "title": "An initiative to secure the world's software | Project Glasswing", "duration": "5:49", "category": "general"},
+    {"id": "D4XTefP3Lsc", "title": "When AIs act emotional", "duration": "4:53", "category": "general"},
+    {"id": "dPn3GBI8lII", "title": "Introducing Claude Opus 4.6", "duration": "0:40", "category": "product_launch"},
+    {"id": "bluAmTHoEow", "title": "Your tools are now interactive in Claude", "duration": "0:54", "category": "general"},
+    {"id": "N5yJJA0NCU0", "title": "AI on campus", "duration": "38:48", "category": "event"},
+    {"id": "UAmKyyZ-b9E", "title": "Introducing Cowork: Claude Code for the rest of your work", "duration": "1:09", "category": "product_launch"},
+    {"id": "nvbq39yVYRk", "title": "What is sycophancy in AI models?", "duration": "6:09", "category": "research"},
+    {"id": "rBJnWMD0Pho", "title": "Let Claude handle work in your browser", "duration": "1:36", "category": "general"},
+    {"id": "5KTHvKCrQ00", "title": "Claude ran a business in our office", "duration": "6:11", "category": "general"},
+    {"id": "i9U_b-8KKno", "title": "Binti helps social workers license foster families faster with Claude", "duration": "2:07", "category": "general"},
+    {"id": "Uh98_aGhAuY", "title": "What does AI mean for education?", "duration": "42:21", "category": "general"},
+    {"id": "PLyCki2K0Lg", "title": "Why we built—and donated—the Model Context Protocol (MCP)", "duration": "35:32", "category": "general"},
+    {"id": "_jjSS0qGFbI", "title": "Getting started with connectors in Claude.ai", "duration": "3:44", "category": "general"},
+    {"id": "XpXImenrSPI", "title": "Claude Code in Slack", "duration": "0:42", "category": "tutorial"},
+    {"id": "tJP6SKfo49c", "title": "How Anthropic uses Claude in Legal", "duration": "3:40", "category": "general"},
+    {"id": "I9aGC6Ui3eE", "title": "Anthropic's philosopher answers your questions", "duration": "36:10", "category": "general"},
+    {"id": "xatyxfEevZA", "title": "AI Fluency for nonprofits course trailer", "duration": "1:14", "category": "general"},
+    {"id": "R-KJgjIrh24", "title": "Getting started with research in Claude.ai", "duration": "2:51", "category": "general"}
+  ]
+}

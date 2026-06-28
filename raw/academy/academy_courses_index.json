@@ -1,0 +1,175 @@
+{
+  "source": "anthropic.skilljar.com",
+  "scraped_at": "2026-06-26",
+  "total_courses": 20,
+  "courses": [
+    {
+      "id": 1,
+      "title": "Claude 101",
+      "slug": "claude-101",
+      "category": "beginner",
+      "url": "https://anthropic.skilljar.com/claude-101",
+      "description": "Learn how to use Claude for everyday work tasks, understand core features, and explore resources for more advanced learning on other topics.",
+      "chapters": ["What is Claude?", "Your first conversation with Claude", "Getting better results", "Claude desktop app: Chat, Cowork, Code", "Introduction to projects", "Creating with artifacts", "Working with skills", "Connecting your tools", "Enterprise search", "Research mode for deep dives", "Claude in action: use-cases by role", "Other ways to work with Claude", "Conclusion & certificate"]
+    },
+    {
+      "id": 2,
+      "title": "Claude Code 101",
+      "slug": "claude-code-101",
+      "category": "developer",
+      "description": "Learn how to use Claude Code effectively in your daily development workflow. Covers the agentic loop, context window, tools, permissions, Explore→Plan→Code→Commit workflow, CLAUDE.md, subagents, skills, MCP servers, and hooks.",
+      "sections": 4,
+      "lessons": 12
+    },
+    {
+      "id": 3,
+      "title": "Claude Platform 101",
+      "slug": "claude-platform-101",
+      "category": "developer",
+      "prerequisites": "Comfort reading code in at least one language, basic command-line familiarity",
+      "description": "Teaches developers to build on the Claude Developer Platform from the ground up. Covers API requests, model selection, agent loop, tool use, extended thinking, Skills, MCP, context management, and managed agents. Uses TypeScript SDK with runnable demos.",
+      "chapters": 14
+    },
+    {
+      "id": 4,
+      "title": "Introduction to Claude Cowork",
+      "slug": "introduction-to-claude-cowork",
+      "category": "professional",
+      "description": "Learn to work alongside Claude on your real files and projects. Covers Cowork task loop, skills and plugins, Chrome/Word/Excel/PowerPoint/Outlook integration, and responsible multi-step work practices.",
+      "sections": 4,
+      "lessons": 14,
+      "video_hours": 0.5
+    },
+    {
+      "id": 5,
+      "title": "Claude Code in Action",
+      "slug": "claude-code-in-action",
+      "category": "developer",
+      "description": "Integrate Claude Code into your development workflow"
+    },
+    {
+      "id": 6,
+      "title": "AI Fluency: Framework & Foundations",
+      "slug": "ai-fluency-framework-foundations",
+      "category": "ai-fluency",
+      "description": "Learn to collaborate with AI systems effectively, efficiently, ethically, and safely. Based on AI Fluency Framework (4Ds: Delegation, Description, Discernment, Diligence).",
+      "sections": 2,
+      "lessons": 20,
+      "video_hours": 1.1
+    },
+    {
+      "id": 7,
+      "title": "Building with the Claude API",
+      "slug": "building-with-the-anthropic-api",
+      "category": "developer",
+      "description": "Comprehensive course covering full spectrum of working with Anthropic models using Claude API: multi-turn conversations, streaming, structured output, tool calling, RAG pipelines, hybrid search, MCP, Claude Code, Computer Use, agent architectures. Python-focused.",
+      "sections": 7,
+      "lessons": 87
+    },
+    {
+      "id": 8,
+      "title": "Introduction to Model Context Protocol",
+      "slug": "introduction-to-model-context-protocol",
+      "category": "developer",
+      "description": "Learn to build modular AI applications using MCP to connect Claude with external tools and data sources. Build MCP servers (tools, resources, prompts) and clients using Python SDK.",
+      "sections": 2,
+      "lessons": 16
+    },
+    {
+      "id": 9,
+      "title": "AI Fluency for educators",
+      "slug": "ai-fluency-for-educators",
+      "category": "ai-fluency",
+      "description": "Empowers faculty, instructional designers, and educational leaders to apply the 4D Framework to teaching practice and institutional strategy.",
+      "sections": 2,
+      "lessons": 4,
+      "video_hours": 0.4
+    },
+    {
+      "id": 10,
+      "title": "AI Fluency for students",
+      "slug": "ai-fluency-for-students",
+      "category": "ai-fluency",
+      "description": "Empowers students to develop AI Fluency skills that enhance learning, career planning, and academic success through responsible AI collaboration."
+    },
+    {
+      "id": 11,
+      "title": "Model Context Protocol: Advanced Topics",
+      "slug": "model-context-protocol-advanced-topics",
+      "category": "developer",
+      "description": "Deep dive into MCP's advanced features including sampling, notifications, file system access, transport mechanisms, and production deployment strategies.",
+      "sections": 2,
+      "lessons": 15
+    },
+    {
+      "id": 12,
+      "title": "Claude with Amazon Bedrock",
+      "slug": "claude-in-amazon-bedrock",
+      "category": "cloud",
+      "description": "Comprehensive course covering full spectrum of working with Anthropic models via AWS Bedrock API using boto3. Covers streaming, tool use, RAG, prompt evaluation, MCP, Claude Code, Computer Use, prompt caching, extended thinking, image processing.",
+      "sections": 6,
+      "lessons": 76
+    },
+    {
+      "id": 13,
+      "title": "Claude with Google Cloud's Vertex AI",
+      "slug": "claude-with-google-vertex",
+      "category": "cloud",
+      "description": "Comprehensive course covering working with Anthropic models through Google Cloud Vertex AI. Covers authentication, model selection, prompt evaluation, tool calling, RAG, extended thinking, citations, prompt caching, MCP, agents/workflows.",
+      "sections": 7,
+      "lessons": 87
+    },
+    {
+      "id": 14,
+      "title": "Teaching AI Fluency",
+      "slug": "teaching-ai-fluency",
+      "category": "ai-fluency",
+      "description": "Empowers faculty, instructional designers, and others to teach and assess AI Fluency in instructor-led settings."
+    },
+    {
+      "id": 15,
+      "title": "AI Fluency for nonprofits",
+      "slug": "ai-fluency-for-nonprofits",
+      "category": "ai-fluency",
+      "description": "Empowers nonprofit professionals to develop AI fluency to increase organizational impact and efficiency while staying true to mission and values."
+    },
+    {
+      "id": 16,
+      "title": "Introduction to agent skills",
+      "slug": "introduction-to-agent-skills",
+      "category": "developer",
+      "description": "Learn how to build, configure, and share Skills in Claude Code — reusable markdown instructions that Claude automatically applies to the right tasks at the right time."
+    },
+    {
+      "id": 17,
+      "title": "Introduction to subagents",
+      "slug": "introduction-to-subagents",
+      "category": "developer",
+      "description": "Learn how to use and create sub-agents in Claude Code to manage context, delegate tasks, and build specialized workflows."
+    },
+    {
+      "id": 18,
+      "title": "AI Capabilities and Limitations",
+      "slug": "ai-capabilities-and-limitations",
+      "category": "foundations",
+      "description": "Introductory course about how AI works. Organized around four properties: Next Token Prediction, Knowledge, Working Memory, Steerability.",
+      "sections": 6,
+      "lessons": 13,
+      "video_hours": 0.25
+    },
+    {
+      "id": 19,
+      "title": "AI Fluency for Small Businesses",
+      "slug": "ai-fluency-for-small-businesses",
+      "category": "ai-fluency",
+      "description": "Empowers small businesses to develop AI fluency to increase organizational impact and efficiency while staying true to mission and values."
+    },
+    {
+      "id": 20,
+      "title": "AI Fluency for Builders",
+      "slug": "ai-fluency-for-builders",
+      "category": "ai-fluency",
+      "description": "Empowers builders to develop AI fluency — increasing impact and efficiency while staying true to what it means to own the full arc from problem to shipped solution."
+    }
+  ]
+}
