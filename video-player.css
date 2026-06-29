@@ -1,0 +1,69 @@
+/* 视频播放器样式 */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.video-player {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
+.video-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+}
+
+.video-controls button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.video-controls button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.subtitle-toggle {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subtitle-toggle label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .video-container {
+    margin: 1rem 0;
+  }
+  
+  .video-controls {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .video-controls button {
+    flex: 1;
+    min-width: 80px;
+  }
+}
