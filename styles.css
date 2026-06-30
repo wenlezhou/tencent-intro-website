@@ -1302,3 +1302,280 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
 }
+
+/* === 官方技术文档区域 === */
+.docs-category {
+  margin-bottom: 40px;
+}
+
+.docs-category-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
+}
+
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.doc-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.doc-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: var(--bg-card-hover);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.12);
+}
+
+.doc-card:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.doc-card-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.doc-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.doc-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.doc-card-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.doc-card-arrow {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.doc-card:hover .doc-card-arrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* === Cookbook 实用示例区域 === */
+.cookbook-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.cookbook-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.cookbook-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #0891b2);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cookbook-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 16px 40px rgba(99, 102, 241, 0.15);
+  background: var(--bg-card-hover);
+}
+
+.cookbook-card:hover::before {
+  opacity: 1;
+}
+
+.cookbook-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cookbook-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.cookbook-lines {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.cookbook-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.cookbook-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.cookbook-card-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px dashed var(--border);
+  background: transparent;
+}
+
+.cookbook-card-more:hover {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.cookbook-card-more .cookbook-card-title {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+/* === 中文翻译区域 === */
+.translation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.translation-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.translation-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-accent);
+}
+
+.translation-status {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.translation-in-progress {
+  border-left: 3px solid #eab308;
+}
+
+.translation-in-progress .translation-status {
+  color: #eab308;
+}
+
+.translation-pending {
+  border-left: 3px solid var(--border);
+  opacity: 0.75;
+}
+
+.translation-pending .translation-status {
+  color: var(--text-muted);
+}
+
+.translation-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.translation-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* === 导航栏滚动样式优化 === */
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-links a {
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+/* === 响应式：新区域适配 === */
+@media (max-width: 768px) {
+  .docs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cookbook-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .translation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+}

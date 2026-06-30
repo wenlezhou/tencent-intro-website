@@ -22,6 +22,9 @@
         <li><a href="#categories">分类浏览</a></li>
         <li><a href="#paths">学习路径</a></li>
         <li><a href="#courses">课程列表</a></li>
+        <li><a href="#docs">技术文档</a></li>
+        <li><a href="#cookbook">Cookbook</a></li>
+        <li><a href="#zh-translations">中文翻译</a></li>
       </ul>
       <div class="nav-search">
         <span class="nav-search-icon">🔍</span>
@@ -60,20 +63,20 @@
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
-            <div class="hero-stat-number">7</div>
-            <div class="hero-stat-label">精华教程</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number">6</div>
-            <div class="hero-stat-label">内容分类</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number">5</div>
-            <div class="hero-stat-label">学习路径</div>
-          </div>
-          <div class="hero-stat">
             <div class="hero-stat-number">25+</div>
             <div class="hero-stat-label">课程资源</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">28</div>
+            <div class="hero-stat-label">技术文档</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">28</div>
+            <div class="hero-stat-label">Cookbook 示例</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">170+</div>
+            <div class="hero-stat-label">视频资源</div>
           </div>
         </div>
       </div>
@@ -295,6 +298,345 @@
       </div>
     </section>
 
+    <!-- 官方技术文档 -->
+    <section class="section" id="docs" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">官方技术文档</h2>
+          <p class="section-desc">源自 Claude 官方平台的权威技术文档，涵盖从入门到高级功能</p>
+        </div>
+
+        <div class="docs-category">
+          <h3 class="docs-category-title">🚀 入门指南</h3>
+          <div class="docs-grid">
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/00_get_started.md', '_blank')">
+              <div class="doc-card-icon">📘</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Get Started</div>
+                <div class="doc-card-desc">Claude 快速上手指南</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/01_intro_to_claude.md', '_blank')">
+              <div class="doc-card-icon">🤖</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Intro to Claude</div>
+                <div class="doc-card-desc">Claude 平台概览介绍</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-category">
+          <h3 class="docs-category-title">🔧 API 使用</h3>
+          <div class="docs-grid">
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/02_using_messages_api_v2.md', '_blank')">
+              <div class="doc-card-icon">💬</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Messages API</div>
+                <div class="doc-card-desc">消息 API 完整使用指南</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/03_models_overview_v2.md', '_blank')">
+              <div class="doc-card-icon">🧠</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Models Overview</div>
+                <div class="doc-card-desc">模型系列概览与对比</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/04_features_overview_v2.md', '_blank')">
+              <div class="doc-card-icon">✨</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Features Overview</div>
+                <div class="doc-card-desc">Claude 功能全景总览</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/05_managed_agents_overview_v2.md', '_blank')">
+              <div class="doc-card-icon">🔐</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Managed Agents</div>
+                <div class="doc-card-desc">托管 Agent 服务概览</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/08_streaming.md', '_blank')">
+              <div class="doc-card-icon">📡</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Streaming Messages</div>
+                <div class="doc-card-desc">流式消息传输</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-category">
+          <h3 class="docs-category-title">⚡ 核心功能</h3>
+          <div class="docs-grid">
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/06_extended_thinking_v2.md', '_blank')">
+              <div class="doc-card-icon">💭</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Extended Thinking</div>
+                <div class="doc-card-desc">扩展思维 - 深度推理能力</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/07_prompt_caching_v2.md', '_blank')">
+              <div class="doc-card-icon">💾</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Prompt Caching</div>
+                <div class="doc-card-desc">提示词缓存 - 降低成本与延迟</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/08_tool_use_overview_v2.md', '_blank')">
+              <div class="doc-card-icon">🛠️</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Tool Use</div>
+                <div class="doc-card-desc">工具调用 - 连接外部能力</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/09_structured_outputs_v2.md', '_blank')">
+              <div class="doc-card-icon">📊</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Structured Outputs</div>
+                <div class="doc-card-desc">结构化输出 - JSON 模式</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/10_vision_v2.md', '_blank')">
+              <div class="doc-card-icon">👁️</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Vision</div>
+                <div class="doc-card-desc">视觉理解 - 图像分析能力</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-category">
+          <h3 class="docs-category-title">🚀 高级功能</h3>
+          <div class="docs-grid">
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/10_web_search_tool.md', '_blank')">
+              <div class="doc-card-icon">🔍</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Web Search Tool</div>
+                <div class="doc-card-desc">网页搜索工具</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/11_batch_processing.md', '_blank')">
+              <div class="doc-card-icon">📦</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Batch Processing</div>
+                <div class="doc-card-desc">批量处理 API</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/12_code_execution_tool.md', '_blank')">
+              <div class="doc-card-icon">⚡</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Code Execution</div>
+                <div class="doc-card-desc">代码执行工具</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-category">
+          <h3 class="docs-category-title">📐 工程实践</h3>
+          <div class="docs-grid">
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/05_prompt_engineering_overview.md', '_blank')">
+              <div class="doc-card-icon">✍️</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Prompt Engineering</div>
+                <div class="doc-card-desc">提示词工程总览</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/13_prompt_engineering_best_practices.md', '_blank')">
+              <div class="doc-card-icon">🏆</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Best Practices</div>
+                <div class="doc-card-desc">提示词最佳实践</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/14_rate_limits.md', '_blank')">
+              <div class="doc-card-icon">⏱️</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Rate Limits</div>
+                <div class="doc-card-desc">速率限制说明</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/15_pricing.md', '_blank')">
+              <div class="doc-card-icon">💰</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Pricing</div>
+                <div class="doc-card-desc">定价说明</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/16_workspaces.md', '_blank')">
+              <div class="doc-card-icon">🏢</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Workspaces</div>
+                <div class="doc-card-desc">工作空间管理</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+            <div class="doc-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/docs/17_usage_cost_api.md', '_blank')">
+              <div class="doc-card-icon">📈</div>
+              <div class="doc-card-body">
+                <div class="doc-card-title">Usage & Cost API</div>
+                <div class="doc-card-desc">用量与成本 API</div>
+              </div>
+              <div class="doc-card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cookbook 实用示例 -->
+    <section class="section" id="cookbook">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Cookbook 实用示例</h2>
+          <p class="section-desc">源自 Anthropic 官方 Cookbook 的代码示例与实战指南，13,800+ 行可直接复用的代码</p>
+        </div>
+
+        <div class="cookbook-grid">
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/00_overview.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">总览</span>
+              <span class="cookbook-lines">259行</span>
+            </div>
+            <div class="cookbook-card-title">Cookbook 总览</div>
+            <div class="cookbook-card-desc">完整目录结构、前置条件与资源链接</div>
+          </div>
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/01_tool_use.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">工具调用</span>
+              <span class="cookbook-lines">1521行</span>
+            </div>
+            <div class="cookbook-card-title">Tool Use 工具使用</div>
+            <div class="cookbook-card-desc">客服Agent、计算器工具、并行工具调用、工具选择策略等6个示例</div>
+          </div>
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/02_classification.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">分类</span>
+              <span class="cookbook-lines">818行</span>
+            </div>
+            <div class="cookbook-card-title">文本分类指南</div>
+            <div class="cookbook-card-desc">使用 Claude 进行文本分类的完整方案</div>
+          </div>
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/03_summarization.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">摘要</span>
+              <span class="cookbook-lines">779行</span>
+            </div>
+            <div class="cookbook-card-title">文本摘要指南</div>
+            <div class="cookbook-card-desc">长文本摘要、多文档摘要、结构化摘要等</div>
+          </div>
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/04_multimodal.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">多模态</span>
+              <span class="cookbook-lines">983行</span>
+            </div>
+            <div class="cookbook-card-title">多模态视觉指南</div>
+            <div class="cookbook-card-desc">图像理解、图表读取、PPT转录、最佳实践等4个示例</div>
+          </div>
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/05_rag.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">RAG</span>
+              <span class="cookbook-lines">1286行</span>
+            </div>
+            <div class="cookbook-card-title">RAG 检索增强生成</div>
+            <div class="cookbook-card-desc">向量数据库、评估系统、摘要索引、重排序等进阶RAG技术</div>
+          </div>
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/06_misc.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">实用工具</span>
+              <span class="cookbook-lines">2016行</span>
+            </div>
+            <div class="cookbook-card-title">杂项实用工具</div>
+            <div class="cookbook-card-desc">提示词缓存、批处理、JSON模式、评估构建、会话记忆等7个示例</div>
+          </div>
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/19_extended_thinking.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">扩展思维</span>
+              <span class="cookbook-lines">338行</span>
+            </div>
+            <div class="cookbook-card-title">Extended Thinking</div>
+            <div class="cookbook-card-desc">扩展思维功能的基本使用与流式处理</div>
+          </div>
+          <div class="cookbook-card" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/blob/main/raw/cookbook/20_extended_thinking_with_tool_use.md', '_blank')">
+            <div class="cookbook-card-header">
+              <span class="cookbook-badge">高级</span>
+              <span class="cookbook-lines">594行</span>
+            </div>
+            <div class="cookbook-card-title">扩展思维 + 工具调用</div>
+            <div class="cookbook-card-desc">将扩展思维与工具调用结合的进阶示例</div>
+          </div>
+          <div class="cookbook-card cookbook-card-more" onclick="window.open('https://github.com/wenlezhou/tencent-intro-website/tree/main/raw/cookbook', '_blank')">
+            <div class="cookbook-card-title">查看全部 28 个示例 →</div>
+            <div class="cookbook-card-desc">包含 Prompt Caching、Batch Processing、JSON Mode、Session Memory、Speculative Caching 等</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 中文翻译区域 -->
+    <section class="section" id="zh-translations" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">中文教程翻译</h2>
+          <p class="section-desc">官方课程正在翻译为中文，敬请期待</p>
+        </div>
+        <div class="translation-grid">
+          <div class="translation-card translation-in-progress">
+            <div class="translation-status">🔄 翻译中</div>
+            <div class="translation-title">Claude 101: 入门教程</div>
+            <div class="translation-desc">13 章节 · 面向 AI 初学者</div>
+          </div>
+          <div class="translation-card translation-pending">
+            <div class="translation-status">⏳ 待翻译</div>
+            <div class="translation-title">Claude Code 101: 开发者入门</div>
+            <div class="translation-desc">12 课时 · 面向开发者</div>
+          </div>
+          <div class="translation-card translation-pending">
+            <div class="translation-status">⏳ 待翻译</div>
+            <div class="translation-title">Prompt Engineering 完全指南</div>
+            <div class="translation-desc">13 章节 · 提示词工程</div>
+          </div>
+          <div class="translation-card translation-pending">
+            <div class="translation-status">⏳ 待翻译</div>
+            <div class="translation-title">Claude Platform 101</div>
+            <div class="translation-desc">14 章节 · 平台入门</div>
+          </div>
+          <div class="translation-card translation-pending">
+            <div class="translation-status">⏳ 待翻译</div>
+            <div class="translation-title">Claude Code in Action</div>
+            <div class="translation-desc">6 个实战项目</div>
+          </div>
+          <div class="translation-card translation-pending">
+            <div class="translation-status">⏳ 待翻译</div>
+            <div class="translation-title">Building with the Claude API</div>
+            <div class="translation-desc">8 章节 · API 实战开发</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 关于 -->
     <section class="section">
       <div class="container">
@@ -312,6 +654,14 @@
             <div style="text-align: center;">
               <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">5</div>
               <div style="font-size: 0.85rem; color: var(--text-muted);">开源实践课程</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">28</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">官方技术文档</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">28</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Cookbook 实用示例</div>
             </div>
             <div style="text-align: center;">
               <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">170+</div>
