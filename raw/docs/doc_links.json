@@ -1,0 +1,154 @@
+[
+  {
+    "title": "Claude Platform Docs",
+    "url": "https://docs.anthropic.com/docs/en/home"
+  },
+  {
+    "title": "Messages",
+    "url": "https://docs.anthropic.com/docs/en/intro"
+  },
+  {
+    "title": "Managed Agents",
+    "url": "https://docs.anthropic.com/docs/en/managed-agents/overview"
+  },
+  {
+    "title": "Admin",
+    "url": "https://docs.anthropic.com/docs/en/manage-claude/admin-api"
+  },
+  {
+    "title": "\nAPI reference",
+    "url": "https://docs.anthropic.com/docs/en/api/overview"
+  },
+  {
+    "title": "\nConsole",
+    "url": "https://docs.anthropic.com/"
+  },
+  {
+    "title": "Log in",
+    "url": "https://docs.anthropic.com/login?returnTo=%2Fdocs%2Fen%2Fhome"
+  },
+  {
+    "title": "\nQuickstart",
+    "url": "https://docs.anthropic.com/docs/en/get-started"
+  },
+  {
+    "title": "\nGet API key",
+    "url": "https://docs.anthropic.com/settings/keys"
+  },
+  {
+    "title": "\nAPI reference\n",
+    "url": "https://docs.anthropic.com/docs/en/api/messages/create"
+  },
+  {
+    "title": "\nClient SDKs\n",
+    "url": "https://docs.anthropic.com/docs/en/api/client-sdks"
+  },
+  {
+    "title": "\nQuickstart\n",
+    "url": "https://docs.anthropic.com/docs/en/managed-agents/quickstart"
+  },
+  {
+    "title": "\nAPI reference\n",
+    "url": "https://docs.anthropic.com/docs/en/api/beta/sessions"
+  },
+  {
+    "title": "Define your agent\n",
+    "url": "https://docs.anthropic.com/docs/en/managed-agents/agent-setup"
+  },
+  {
+    "title": "Amazon Bedrock\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-amazon-bedrock"
+  },
+  {
+    "title": "Google Cloud\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/claude-on-vertex-ai"
+  },
+  {
+    "title": "Microsoft Foundry\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-microsoft-foundry"
+  },
+  {
+    "title": "\nChoose a model\n",
+    "url": "https://docs.anthropic.com/docs/en/about-claude/models/overview"
+  },
+  {
+    "title": "\nTry the Workbench\n",
+    "url": "https://docs.anthropic.com/workbench"
+  },
+  {
+    "title": "Extended thinking\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/extended-thinking"
+  },
+  {
+    "title": "\nVision\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/vision"
+  },
+  {
+    "title": "\nTool use\n",
+    "url": "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/overview"
+  },
+  {
+    "title": "Web search\n",
+    "url": "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/web-search-tool"
+  },
+  {
+    "title": "\nCode execution\n",
+    "url": "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/code-execution-tool"
+  },
+  {
+    "title": "Structured outputs\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/structured-outputs"
+  },
+  {
+    "title": "\nPrompt caching\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/prompt-caching"
+  },
+  {
+    "title": "Streaming\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/streaming"
+  },
+  {
+    "title": "Prompting best practices\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/prompt-engineering/overview"
+  },
+  {
+    "title": "\nRun evals\n",
+    "url": "https://docs.anthropic.com/docs/en/test-and-evaluate/develop-tests"
+  },
+  {
+    "title": "Batch testing\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/batch-processing"
+  },
+  {
+    "title": "\nSafety and guardrails\n",
+    "url": "https://docs.anthropic.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency"
+  },
+  {
+    "title": "\nRate limits and errors\n",
+    "url": "https://docs.anthropic.com/docs/en/api/rate-limits"
+  },
+  {
+    "title": "Cost optimization\n",
+    "url": "https://docs.anthropic.com/docs/en/about-claude/pricing"
+  },
+  {
+    "title": "\nWorkspaces and admin\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/workspaces"
+  },
+  {
+    "title": "\nUsage monitoring\n",
+    "url": "https://docs.anthropic.com/docs/en/build-with-claude/usage-cost-api"
+  },
+  {
+    "title": "\nModel migration\n",
+    "url": "https://docs.anthropic.com/docs/en/about-claude/models/migration-guide"
+  },
+  {
+    "title": "\nWhat's new\nLatest features and updates.",
+    "url": "https://docs.anthropic.com/docs/en/release-notes/overview"
+  },
+  {
+    "title": "Claude Platform Docs",
+    "url": "https://docs.anthropic.com/docs"
+  }
+]
