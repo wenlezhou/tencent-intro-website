@@ -1,4 +1,6 @@
-/* 视频播放器样式 */
+/* UI Designer: 增强视频播放器样式 */
+
+/* 视频容器 */
 .video-container {
   position: relative;
   width: 100%;
@@ -7,14 +9,18 @@
   background: var(--bg-secondary);
   border-radius: var(--radius);
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
+/* 视频播放器 */
 .video-player {
   width: 100%;
   aspect-ratio: 16/9;
   border: none;
+  display: block;
 }
 
+/* 视频控制栏 */
 .video-controls {
   display: flex;
   align-items: center;
@@ -32,13 +38,22 @@
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: all 0.2s;
+  font-size: 1rem;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .video-controls button:hover {
   background: var(--accent-hover);
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
+.video-controls button:active {
+  transform: translateY(0);
+}
+
+/* 字幕切换 */
 .subtitle-toggle {
   margin-left: auto;
   display: flex;
@@ -49,21 +64,116 @@
 .subtitle-toggle label {
   color: var(--text-secondary);
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
-/* 响应式设计 */
+.subtitle-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+/* 加载状态 */
+.video-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  border-radius: var(--radius);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* 错误状态 */
+.video-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-size: 1rem;
+  border-radius: var(--radius);
+  border: 1px dashed var(--border);
+}
+
+/* 响应式设计 - 增强版 */
 @media (max-width: 768px) {
   .video-container {
     margin: 1rem 0;
+    border-radius: var(--radius-sm);
   }
   
   .video-controls {
     flex-wrap: wrap;
     gap: 0.5rem;
+    padding: 0.75rem;
   }
   
   .video-controls button {
     flex: 1;
     min-width: 80px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
   }
+  
+  .subtitle-toggle {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    margin: 0.75rem 0;
+  }
+  
+  .video-controls {
+    padding: 0.5rem;
+  }
+  
+  .video-controls button {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* 全屏模式优化 */
+.video-player:fullscreen,
+.video-player:-webkit-full-screen {
+  aspect-ratio: auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+  .video-controls button {
+    min-height: 48px;
+    min-width: 48px;
+  }
+}
+
+/* 深色模式字幕样式 */
+::cue {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
