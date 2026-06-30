@@ -6,7 +6,7 @@
     "category": "basics",
     "date": "2026-06-29",
     "summary": "学习如何使用Claude进行日常工作任务，理解核心功能和特性",
-    "thumbnail": "/content/images/claude-101.svg",
+    "thumbnail": "/content/images/placeholder.svg",
     "videoId": "d0Uh3Q3n7v8",
     "videoDuration": "45分钟",
     "chapters": 13
@@ -18,7 +18,7 @@
     "category": "developer",
     "date": "2026-06-29",
     "summary": "学习如何在日常开发工作流中有效使用Claude Code，掌握agentic loop和工具使用",
-    "thumbnail": "/content/images/claude-code-101.svg",
+    "thumbnail": "/content/images/placeholder.svg",
     "videoId": "8R9C1F1x1lM",
     "videoDuration": "60分钟",
     "lessons": 12
@@ -30,7 +30,7 @@
     "category": "prompt-engineering",
     "date": "2026-06-28",
     "summary": "学习如何编写高效的Prompt，充分发挥Claude的能力，包含最佳实践和常见错误",
-    "thumbnail": "/content/images/prompt-engineering.svg",
+    "thumbnail": "/content/images/placeholder.svg",
     "videoId": "x3D2sT1m5nQ"
   },
   {
@@ -40,7 +40,7 @@
     "category": "ai-literacy",
     "date": "2026-06-27",
     "summary": "理解RAG原理，构建知识增强的AI应用，提升回答准确性和可靠性",
-    "thumbnail": "/content/images/rag.svg",
+    "thumbnail": "/content/images/placeholder.svg",
     "videoId": "p7L8mK9n2qR"
   },
   {
@@ -50,7 +50,7 @@
     "category": "api-development",
     "date": "2026-06-26",
     "summary": "使用Claude API构建实际应用，包含多轮对话、流式输出、工具调用等高级功能",
-    "thumbnail": "/content/images/claude-api.svg",
+    "thumbnail": "/content/images/placeholder.svg",
     "videoId": "a5B3cD7eF2g"
   },
   {
@@ -60,7 +60,7 @@
     "category": "developer",
     "date": "2026-06-25",
     "summary": "学习如何使用MCP连接Claude与外部工具和数据源，构建模块化AI应用",
-    "thumbnail": "/content/images/mcp-intro.svg",
+    "thumbnail": "/content/images/placeholder.svg",
     "videoId": "m9N4oP5qR1s"
   }
 ]
